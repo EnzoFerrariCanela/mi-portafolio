@@ -1,0 +1,32 @@
+//mixin
+
+@mixin flex-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin grid{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+@mixin efecto{
+    border: 2px solid black;
+    border-radius: 30px;
+    transition: all ease 300ms;
+}
+
+@mixin efecto-hover{
+    transform: scale(1.0);
+    background-color: $color-4;
+    border-radius: 0px;
+    box-shadow: 10px 10px 15px black;
+}

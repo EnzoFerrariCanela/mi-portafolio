@@ -1,0 +1,34 @@
+//imports
+
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+
+/* desktop */
+@media screen and (min-width: 1024px){
+   main{
+        img{
+            margin-left: 200px;
+        }
+
+        .info-1{
+            margin-right: 70px;
+        }
+
+        .exp-hab-titulos{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+        .exp-laboral{
+            grid-area: 1 / 1 / 2 / 2;
+        }
+        .habilidades{
+            grid-area: 1 / 2 / 2 / 3;
+        }
+        .titulos{
+            grid-area: 1 / 3 / 2 / 4;
+        }
+   }
+}
